@@ -14,13 +14,28 @@ class VideosViewController: UIViewController {
     var playerController = AVPlayerViewController()
     var player:AVPlayer?
     
-
+    var selectedVideoFileName : String = ""
+    let videoArray = ["thirdmolar", "implantClip", "canineClip", "TADClip", "orthogClip", "missingToothClip"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        }
+    
+    
+    
+    @IBAction func goButton(_ sender: UIButton) {
         
-        let videoString:String? = Bundle.main.path(forResource: "wisdom_teeth_management", ofType: ".mp4")
+        selectedVideoFileName = videoArray[sender.tag-1]
+        
+       playVideo()
+   
+      }
+
+
+    func playVideo() {
+        
+        let videoString:String? = Bundle.main.path(forResource: selectedVideoFileName, ofType: ".mp4")
         
         if let url = videoString {
             let videoURL = NSURL(fileURLWithPath: url)
@@ -28,20 +43,15 @@ class VideosViewController: UIViewController {
             self.player = AVPlayer(url: videoURL as URL)
             
             self.playerController.player = self.player
-        }
-    }
-    
-    
-    @IBAction func goButton(_ sender: Any) {
-        
-        self.present(self.playerController, animated: true, completion: {
             
-            self.playerController.player?.play()
-   
-      })
+            self.present(self.playerController, animated: true, completion: {
+                
+                self.playerController.player?.play()
         
-    }
+    })
     
-  
-    
+}
+
+}
+
 }

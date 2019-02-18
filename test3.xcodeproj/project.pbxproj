@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A6FFB82221A68EE00199036 /* missingToothClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */; };
 		9A97551A2217B5560004A750 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9755192217B5560004A750 /* VideosViewController.swift */; };
-		9A97551C2217B75A0004A750 /* wisdom_teeth_management.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A97551B2217B75A0004A750 /* wisdom_teeth_management.mp4 */; };
+		9A97551C2217B75A0004A750 /* thirdmolar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A97551B2217B75A0004A750 /* thirdmolar.mp4 */; };
 		9AA74C432218F61E00A77E58 /* briana-wallace-783315-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */; };
 		9AA74C4722190D0200A77E58 /* drywall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C4622190D0200A77E58 /* drywall.jpg */; };
 		9AA74C4B2219331700A77E58 /* intern2.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C4A2219331700A77E58 /* intern2.html */; };
 		9AA74C4E221A14EA00A77E58 /* ODR Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA74C4D221A14EA00A77E58 /* ODR Manager.swift */; };
+		9AA74C59221A5F6400A77E58 /* implantClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C55221A5F6000A77E58 /* implantClip.mp4 */; };
+		9AA74C5A221A5F6400A77E58 /* TADClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C56221A5F6200A77E58 /* TADClip.mp4 */; };
+		9AA74C5B221A5F6400A77E58 /* canineClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C57221A5F6300A77E58 /* canineClip.mp4 */; };
+		9AA74C5C221A5F6400A77E58 /* orthogClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C58221A5F6400A77E58 /* orthogClip.mp4 */; };
 		9ABD63FC22187A50000F6C0F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABD63FB22187A50000F6C0F /* ContactsViewController.swift */; };
 		9ABD64042218862C000F6C0F /* contactsText.html in Resources */ = {isa = PBXBuildFile; fileRef = 9ABD64032218862C000F6C0F /* contactsText.html */; };
 		9AD0628722164C93000F8119 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0628622164C93000F8119 /* WebViewController.swift */; };
@@ -24,12 +29,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingToothClip.mp4; sourceTree = "<group>"; };
 		9A9755192217B5560004A750 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
-		9A97551B2217B75A0004A750 /* wisdom_teeth_management.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = wisdom_teeth_management.mp4; sourceTree = "<group>"; };
+		9A97551B2217B75A0004A750 /* thirdmolar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = thirdmolar.mp4; sourceTree = "<group>"; };
 		9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "briana-wallace-783315-unsplash.jpg"; sourceTree = "<group>"; };
 		9AA74C4622190D0200A77E58 /* drywall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drywall.jpg; sourceTree = "<group>"; };
 		9AA74C4A2219331700A77E58 /* intern2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = intern2.html; sourceTree = "<group>"; };
 		9AA74C4D221A14EA00A77E58 /* ODR Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ODR Manager.swift"; sourceTree = "<group>"; };
+		9AA74C55221A5F6000A77E58 /* implantClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = implantClip.mp4; sourceTree = "<group>"; };
+		9AA74C56221A5F6200A77E58 /* TADClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TADClip.mp4; sourceTree = "<group>"; };
+		9AA74C57221A5F6300A77E58 /* canineClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = canineClip.mp4; sourceTree = "<group>"; };
+		9AA74C58221A5F6400A77E58 /* orthogClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = orthogClip.mp4; sourceTree = "<group>"; };
 		9ABD63FB22187A50000F6C0F /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		9ABD64032218862C000F6C0F /* contactsText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contactsText.html; sourceTree = "<group>"; };
 		9AD0628622164C93000F8119 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +66,12 @@
 		9AA74C4C221A0FCE00A77E58 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				9A97551B2217B75A0004A750 /* wisdom_teeth_management.mp4 */,
+				9AA74C57221A5F6300A77E58 /* canineClip.mp4 */,
+				9AA74C55221A5F6000A77E58 /* implantClip.mp4 */,
+				9AA74C58221A5F6400A77E58 /* orthogClip.mp4 */,
+				9AA74C56221A5F6200A77E58 /* TADClip.mp4 */,
+				9A97551B2217B75A0004A750 /* thirdmolar.mp4 */,
+				9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -162,10 +177,15 @@
 			files = (
 				9AFF5E5722163F3600D1DB37 /* LaunchScreen.storyboard in Resources */,
 				9AA74C4B2219331700A77E58 /* intern2.html in Resources */,
-				9A97551C2217B75A0004A750 /* wisdom_teeth_management.mp4 in Resources */,
+				9A6FFB82221A68EE00199036 /* missingToothClip.mp4 in Resources */,
+				9A97551C2217B75A0004A750 /* thirdmolar.mp4 in Resources */,
+				9AA74C5B221A5F6400A77E58 /* canineClip.mp4 in Resources */,
+				9AA74C5C221A5F6400A77E58 /* orthogClip.mp4 in Resources */,
 				9ABD64042218862C000F6C0F /* contactsText.html in Resources */,
+				9AA74C59221A5F6400A77E58 /* implantClip.mp4 in Resources */,
 				9AA74C432218F61E00A77E58 /* briana-wallace-783315-unsplash.jpg in Resources */,
 				9AA74C4722190D0200A77E58 /* drywall.jpg in Resources */,
+				9AA74C5A221A5F6400A77E58 /* TADClip.mp4 in Resources */,
 				9AFF5E5422163F3600D1DB37 /* Assets.xcassets in Resources */,
 				9AFF5E5222163F3500D1DB37 /* Main.storyboard in Resources */,
 			);
