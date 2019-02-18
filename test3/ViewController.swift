@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +31,12 @@ class ViewController: UIViewController {
         imageView.image = image
         self.navigationItem.titleView = imageView
     
+         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
+        SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
+        SideMenuManager.default.menuFadeStatusBar = false
+        
+         SideMenuManager.default.menuShadowColor = UIColor.green
+       
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
@@ -40,6 +49,8 @@ class ViewController: UIViewController {
 //        }
 //    }
     
-
+   
+   
+    
 }
 

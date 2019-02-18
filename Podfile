@@ -7,6 +7,6 @@ target 'test3' do
 
   # Pods for test3
 
-pod "MobilePlayer"
+pod 'SideMenu'
 
 end

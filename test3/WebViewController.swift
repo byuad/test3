@@ -30,6 +30,15 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(),for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        navigationController?.hidesBarsOnSwipe = true
+      
+        
+        let image: UIImage = UIImage(named: "UNMCicon.png")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.
 
         let localHtmlFile = Bundle.main.url(forResource: "intern2", withExtension: "html");
