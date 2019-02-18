@@ -27,9 +27,9 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         
     
         
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(),for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         // Do any additional setup after loading the view, typically from a nib.
 
         let localHtmlFile = Bundle.main.url(forResource: "intern2", withExtension: "html");

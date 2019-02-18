@@ -14,8 +14,12 @@ class VideosViewController: UIViewController {
     var playerController = AVPlayerViewController()
     var player:AVPlayer?
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         let videoString:String? = Bundle.main.path(forResource: "wisdom_teeth_management", ofType: ".mp4")
         
         if let url = videoString {
@@ -27,10 +31,17 @@ class VideosViewController: UIViewController {
         }
     }
     
+    
     @IBAction func goButton(_ sender: Any) {
+        
         self.present(self.playerController, animated: true, completion: {
             
             self.playerController.player?.play()
-        })
+   
+      })
+        
     }
+    
+  
+    
 }
