@@ -16,13 +16,23 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        self.navigationController!.navigationBar.barStyle = .black
+        self.navigationController!.navigationBar.isTranslucent = true
       
         menuTableView.dataSource = self
+        
+        let background = UIImageView(image: UIImage(named: "andre-iv-1310544-unsplash.jpg"))
+        self.menuTableView.backgroundView = background
+        background.contentMode = .scaleAspectFill
+    
+    
     
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,10 +48,27 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
         
+//         cell.backgroundColor = UIColor.white
+//        cell.contentView.layer.opacity = 0.4
+      
+        
         return cell
-    }
+        
+       }
   
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+    }
+    
+    
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
 
 }
 

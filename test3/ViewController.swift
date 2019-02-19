@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         
+        self.navigationController!.navigationBar.tintColor = UIColor.white
+        
 //        UITabBar.appearance().backgroundColor = UIColor.clear
 //        UITabBar.appearance().backgroundImage = UIImage()
 //
@@ -35,7 +37,10 @@ class ViewController: UIViewController {
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
         SideMenuManager.default.menuFadeStatusBar = false
         
-         SideMenuManager.default.menuShadowColor = UIColor.green
+         SideMenuManager.default.menuShadowColor = UIColor.black
+        
+        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        
        
     }
 

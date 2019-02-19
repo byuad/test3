@@ -146,14 +146,6 @@
                                     <constraint firstAttribute="trailing" secondItem="saf-FI-Kfh" secondAttribute="trailing" constant="20" id="mkD-vD-Kz7"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-u1-uIr">
-                                <rect key="frame" x="16" y="64" width="48" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="menuIcon"/>
-                                <connections>
-                                    <segue destination="GHd-UK-oXL" kind="presentation" id="QHf-rI-7tp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -169,6 +161,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="First Page" id="3NA-jh-Dra">
+                        <barButtonItem key="leftBarButtonItem" image="menuIcon2" style="plain" id="v7r-9v-tAJ">
+                            <connections>
+                                <segue destination="GHd-UK-oXL" kind="presentation" id="dBv-JH-IaF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="DFk-9M-h38">
                             <connections>
                                 <action selector="buttonPressed:" destination="BYZ-38-t0r" id="owQ-80-BQi"/>
@@ -430,31 +427,39 @@
         <scene sceneID="Lfp-e8-Oe9">
             <objects>
                 <tableViewController storyboardIdentifier="SideMenuViewController" id="JoV-Qd-vx9" customClass="SideMenuViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QFN-4S-hAV">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QFN-4S-hAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="Cb2-Cl-25w" style="IBUITableViewCellStyleDefault" id="dnB-7Y-LZf">
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="Cb2-Cl-25w" style="IBUITableViewCellStyleDefault" id="dnB-7Y-LZf">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dnB-7Y-LZf" id="mwI-Xb-2eR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="First Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cb2-Cl-25w">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu" id="fgT-nx-zdT"/>
+                    <navigationItem key="navigationItem" title="Menu" id="fgT-nx-zdT">
+                        <barButtonItem key="leftBarButtonItem" image="backButton2" id="Nv0-mk-n8C">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="JoV-Qd-vx9" id="PD0-Pe-hhR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="menuTableView" destination="QFN-4S-hAV" id="07H-l4-Hrl"/>
                     </connections>
@@ -505,10 +510,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton2" width="37.5" height="37.5"/>
         <image name="briana-wallace-783315-unsplash" width="6000" height="4000"/>
         <image name="forceps" width="750" height="500"/>
         <image name="implantScreen" width="133" height="75"/>
-        <image name="menuIcon" width="92" height="92"/>
+        <image name="menuIcon2" width="45" height="45"/>
         <image name="phone-call" width="80" height="80"/>
         <image name="pin" width="66" height="80"/>
         <image name="pulse" width="92" height="80"/>
