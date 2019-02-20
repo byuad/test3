@@ -8,7 +8,7 @@
 import Foundation
 import WebKit
 
-class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelegate {
+class InternDutiesController: UIViewController, UIWebViewDelegate, WKNavigationDelegate {
     
     
       var webView: WKWebView!
@@ -27,18 +27,12 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         
     
         
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(),for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
         
-        navigationController?.hidesBarsOnSwipe = true
+        
+        navigationController?.hidesBarsOnSwipe = false
       
         
-        let image: UIImage = UIImage(named: "UNMCicon.png")!
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = image
-        self.navigationItem.titleView = imageView
+        
         // Do any additional setup after loading the view, typically from a nib.
 
         let localHtmlFile = Bundle.main.url(forResource: "intern2", withExtension: "html");
@@ -51,6 +45,21 @@ class WebViewController: UIViewController, UIWebViewDelegate, WKNavigationDelega
         
        
        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(),for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        let image: UIImage = UIImage(named: "UNMCicon.png")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
+        
     }
     
     

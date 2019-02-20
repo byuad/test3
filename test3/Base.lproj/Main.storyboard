@@ -16,14 +16,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="briana-wallace-783315-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-u1-3w6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-a6-GxR">
-                                <rect key="frame" x="20" y="104.5" width="335" height="458.5"/>
+                                <rect key="frame" x="20" y="72.5" width="335" height="458.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="sde-6l-mNd">
                                         <rect key="frame" x="20" y="0.0" width="295" height="147.5"/>
@@ -49,9 +49,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CB-GcT">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="scheduleIcon"/>
-                                                        <connections>
-                                                            <segue destination="dE1-3g-sbh" kind="show" id="vCz-Bm-6ae"/>
-                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Schedule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-3v-dCt">
                                                         <rect key="frame" x="15.5" y="90" width="91.5" height="57.5"/>
@@ -126,7 +123,7 @@
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="phone-call"/>
                                                         <connections>
-                                                            <segue destination="zNF-QP-j2w" kind="show" id="2OF-Cx-SbJ"/>
+                                                            <segue destination="dE1-3g-sbh" kind="show" id="7sA-9M-nyQ"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1b-f5-ErH">
@@ -188,15 +185,15 @@
             <objects>
                 <viewController id="lZD-mH-Nrc" customClass="VideosViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7b-qI-x65">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forceps" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-Xh-ROm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50283604452054798" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dyb-Kn-mmN">
-                                <rect key="frame" x="20" y="76.5" width="335" height="514.5"/>
+                                <rect key="frame" x="20" y="44.5" width="335" height="514.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-6C-5h3">
                                         <rect key="frame" x="20" y="0.0" width="295" height="140.5"/>
@@ -350,46 +347,12 @@
             </objects>
             <point key="canvasLocation" x="1333.5999999999999" y="850.52473763118451"/>
         </scene>
-        <!--Contacts View Controller-->
-        <scene sceneID="3Bv-OS-WZ2">
-            <objects>
-                <viewController id="zNF-QP-j2w" customClass="ContactsViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2I5-nQ-cko">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBo-Lw-NV0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YBo-Lw-NV0" secondAttribute="trailing" id="8Nj-2d-jB4"/>
-                            <constraint firstAttribute="bottom" secondItem="YBo-Lw-NV0" secondAttribute="bottom" id="Ecq-rs-zgc"/>
-                            <constraint firstItem="YBo-Lw-NV0" firstAttribute="leading" secondItem="2I5-nQ-cko" secondAttribute="leading" id="XDh-EF-Lw6"/>
-                            <constraint firstItem="YBo-Lw-NV0" firstAttribute="top" secondItem="2I5-nQ-cko" secondAttribute="top" id="zXQ-jd-eJl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="nop-TF-cm1"/>
-                    </view>
-                    <connections>
-                        <outlet property="textWebView" destination="YBo-Lw-NV0" id="FmD-3d-bbX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4tO-vS-e4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2124" y="850.52473763118451"/>
-        </scene>
         <!--Important Contacts-->
         <scene sceneID="Pmh-6s-uHe">
             <objects>
                 <tableViewController title="Important Contacts" id="dE1-3g-sbh" customClass="ContactsTableViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QtM-SM-1Rw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -454,16 +417,16 @@
             </objects>
             <point key="canvasLocation" x="2768.8000000000002" y="858.62068965517244"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Intern Duties Controller-->
         <scene sceneID="JRM-TZ-SFG">
             <objects>
-                <viewController id="yez-YT-rAR" customClass="WebViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yez-YT-rAR" customClass="InternDutiesController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="WmH-FJ-62B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-cO-qHj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -504,6 +467,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNMCicon" id="iKK-Ji-61w">
+                            <rect key="frame" x="0.0" y="72" width="375" height="268"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" textLabel="Cb2-Cl-25w" style="IBUITableViewCellStyleDefault" id="dnB-7Y-LZf">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -512,10 +479,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="First Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cb2-Cl-25w">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="First Item" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cb2-Cl-25w">
                                             <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -565,7 +532,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="roY-j0-ell" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="33u-fp-JDq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="33u-fp-JDq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -583,6 +550,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="UNMCicon" width="232" height="233"/>
         <image name="backButton2" width="37.5" height="37.5"/>
         <image name="briana-wallace-783315-unsplash" width="6000" height="4000"/>
         <image name="forceps" width="750" height="500"/>

@@ -20,15 +20,19 @@ class VideosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      
+        
+        }
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+        
         let image: UIImage = UIImage(named: "UNMCicon.png")!
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
         self.navigationItem.titleView = imageView
-        
-        }
-    
-    
+    }
     
     @IBAction func goButton(_ sender: UIButton) {
         

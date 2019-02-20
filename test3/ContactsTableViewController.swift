@@ -23,10 +23,10 @@ class TableViewCell: UITableViewCell, UITextViewDelegate {
         super.awakeFromNib()
         
         column2.font = UIFont(name: "Rockwell", size: 14);
-        column2.textColor = UIColor.red
+        column2.textColor = UIColor.black
         
         column3.font = UIFont(name: "Rockwell", size: 14)
-        column3.textColor = UIColor.red
+        column3.textColor = UIColor.black
        
     }
         
@@ -70,22 +70,41 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         Contacts(name: "Dr. Varner", cellPhone: "801-673-6003", pager: "402-888-1458"),
         Contacts(name: "Dr. Treinen", cellPhone: "712-470-6291", pager: "402-888-2494"),
         Contacts(name: "Dr. Faraj", cellPhone: "708-717-9082", pager: "402-888-2494"),
-        Contacts(name: "Dr. Sloan", cellPhone: "801-362-9334", pager: "402-888-5430")
+        Contacts(name: "Dr. Sloan", cellPhone: "801-362-9334", pager: "402-888-5430"),
+        Contacts(name: "Resident Room @ SSP", cellPhone: "", pager: "402-559-6830")
         
     ],
         
         [Contacts(name: "OMFS LOC Clinic", cellPhone: "", pager: "402-559-5999"),
         Contacts(name: "Nurse line LOC", cellPhone: "", pager: "402-559-5024"),
-//        Contacts(name: <#T##String#>, cellPhone: <#T##String#>, pager: <#T##String#>),
-//        Contacts(name: <#T##String#>, cellPhone: <#T##String#>, pager: <#T##String#>)
+        Contacts(name: "Monica VP", cellPhone: "Fax: 3171", pager: "402-596-3172"),
+        Contacts(name: "Terri VP", cellPhone: "", pager: "402-596-3165"),
+        Contacts(name: "LOC Fax", cellPhone: "", pager: "402-559-3499"),
+        Contacts(name: "Presurgical Screening Fax", cellPhone: "", pager: "402-552-3267")
     ],
         
         [Contacts(name: "HL Charge Nurse", cellPhone: "", pager: "402-889-0931"),
-        Contacts(name: "OR scheduling ", cellPhone: "", pager: "402-559-9900")
+        Contacts(name: "Charge Nurse after-hours", cellPhone: "", pager: "402-507-3738"),
+        Contacts(name: "Observation 2OP", cellPhone: "", pager: "402-552-9627"),
+        Contacts(name: "OR scheduling ", cellPhone: "", pager: "402-559-9900"),
+        Contacts(name: "UNMC Hospital Operator", cellPhone: "", pager: "402-552-2000"),
+        Contacts(name: "HL Preop Charge Nurse ", cellPhone: "", pager: "402-889-7402"),
+        Contacts(name: "HL PACU Charge Nurse", cellPhone: "", pager: "402-889-7275"),
+        Contacts(name: "Fritch OR Charge Nurse", cellPhone: "", pager: "402-507-2018"),
+        Contacts(name: "HL OR (room#)", cellPhone: "", pager: "402-552-63__"),
+        Contacts(name: "Trauma Service", cellPhone: "", pager: "402-888-1938"),
+        Contacts(name: "Radiology", cellPhone: "", pager: "402-888-1898"),
+        Contacts(name: "Anesthesia On-Call", cellPhone: "", pager: "402-507-7777"),
+        Contacts(name: "Hospitalist On-call", cellPhone: "", pager: "402-888-1712"),
+        Contacts(name: "Inpatient Pharmacy", cellPhone: "", pager: "402-559-7235"),
+        Contacts(name: "Outpatient (DOC) Pharmacy ", cellPhone: "", pager: "402-559-5215"),
+        Contacts(name: "UNMC Interpretive Services", cellPhone: "", pager: "844-212-7629")
+     
         
         ]]
     
     let myTitles = ["Attending/Residents (Cell & Pager)", "Clinic Numbers", "Hospital Numbers"]
+    
     
     
     override func viewDidLoad() {
@@ -93,7 +112,13 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         
        tableView.dataSource = self
         tableView.delegate = self
+        
+     
+       
 
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.navigationBar.isTranslucent = false
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -104,8 +129,10 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
+        
         self.navigationController?.navigationBar.tintColor = UIColor.black
-        self.navigationController?.navigationBar.barStyle = .black
+        
+        
     }
 
     // MARK: - Table view data source
@@ -123,7 +150,7 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! TableViewCell
        
-      
+    
 
         cell.column1.text = contacts[indexPath.section][indexPath.row].name   // fill in your value for column 1 (e.g. from an array)
         cell.column2.text = contacts[indexPath.section][indexPath.row].cellPhone
@@ -136,11 +163,20 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
         return myTitles[section]
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        
+        let title = UILabel()
+        title.font = UIFont(name: "Rockwell", size: 16)!
+        title.textColor = UIColor.white
+        
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel!.font=title.font
+        header.textLabel!.textColor=title.textColor
+        header.contentView.backgroundColor = UIColor.darkGray
     }
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -209,3 +245,5 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
     */
 
 }
+
+
