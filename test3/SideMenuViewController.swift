@@ -16,10 +16,6 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController!.navigationBar.tintColor = UIColor.white
-        self.navigationController!.navigationBar.barStyle = .black
-        self.navigationController!.navigationBar.isTranslucent = true
       
         menuTableView.dataSource = self
         
@@ -29,6 +25,14 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.isTranslucent = false
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {

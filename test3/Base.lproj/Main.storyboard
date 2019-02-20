@@ -49,6 +49,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CB-GcT">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="scheduleIcon"/>
+                                                        <connections>
+                                                            <segue destination="dE1-3g-sbh" kind="show" id="vCz-Bm-6ae"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Schedule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-3v-dCt">
                                                         <rect key="frame" x="15.5" y="90" width="91.5" height="57.5"/>
@@ -380,6 +383,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tO-vS-e4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2124" y="850.52473763118451"/>
+        </scene>
+        <!--Important Contacts-->
+        <scene sceneID="Pmh-6s-uHe">
+            <objects>
+                <tableViewController title="Important Contacts" id="dE1-3g-sbh" customClass="ContactsTableViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QtM-SM-1Rw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="wTP-0X-uZh" customClass="TableViewCell" customModule="test3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTP-0X-uZh" id="ws3-Xh-y2k">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNS-32-9P9">
+                                            <rect key="frame" x="16" y="11" width="47.5" height="21.5"/>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Lorem ipsum " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pgn-qp-PYF">
+                                            <rect key="frame" x="268" y="5.5" width="97" height="32.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Lorem ipsum " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jqt-l2-LVb">
+                                            <rect key="frame" x="166" y="5.5" width="97" height="32.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pgn-qp-PYF" firstAttribute="leading" secondItem="jqt-l2-LVb" secondAttribute="trailing" constant="5" id="6wP-V1-yXJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pgn-qp-PYF" secondAttribute="trailing" constant="10" id="EDP-L6-fmS"/>
+                                        <constraint firstItem="Pgn-qp-PYF" firstAttribute="centerY" secondItem="ws3-Xh-y2k" secondAttribute="centerY" id="Ntb-PU-rKJ"/>
+                                        <constraint firstItem="jqt-l2-LVb" firstAttribute="centerY" secondItem="ws3-Xh-y2k" secondAttribute="centerY" id="OPg-ZP-tsj"/>
+                                        <constraint firstItem="wNS-32-9P9" firstAttribute="centerY" secondItem="ws3-Xh-y2k" secondAttribute="centerY" id="QrU-84-PsI"/>
+                                        <constraint firstItem="wNS-32-9P9" firstAttribute="top" secondItem="ws3-Xh-y2k" secondAttribute="topMargin" id="bBm-Wz-Rin"/>
+                                        <constraint firstItem="Pgn-qp-PYF" firstAttribute="top" secondItem="ws3-Xh-y2k" secondAttribute="top" constant="5.5" id="gW1-3E-XoQ"/>
+                                        <constraint firstItem="jqt-l2-LVb" firstAttribute="top" secondItem="ws3-Xh-y2k" secondAttribute="top" constant="5.5" id="ne3-sy-XBV"/>
+                                        <constraint firstItem="wNS-32-9P9" firstAttribute="leading" secondItem="ws3-Xh-y2k" secondAttribute="leadingMargin" id="udr-60-m8d"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="column1" destination="wNS-32-9P9" id="00r-fZ-55R"/>
+                                    <outlet property="column2" destination="jqt-l2-LVb" id="yiL-oX-3hF"/>
+                                    <outlet property="column3" destination="Pgn-qp-PYF" id="q4b-YS-c8Z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dE1-3g-sbh" id="RH7-uy-pvC"/>
+                            <outlet property="delegate" destination="dE1-3g-sbh" id="1QC-yp-liE"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="contactsTableView" destination="QtM-SM-1Rw" id="Hg6-re-zyY"/>
+                        <outlet property="tableView" destination="QtM-SM-1Rw" id="IsF-dz-UBB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pcs-Jq-x2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768.8000000000002" y="858.62068965517244"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="JRM-TZ-SFG">

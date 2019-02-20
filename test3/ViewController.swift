@@ -18,11 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
         // Removes navBar GREY and lines
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
         
-        self.navigationController!.navigationBar.tintColor = UIColor.white
         
 //        UITabBar.appearance().backgroundColor = UIColor.clear
 //        UITabBar.appearance().backgroundImage = UIImage()
@@ -42,6 +38,16 @@ class ViewController: UIViewController {
         SideMenuManager.default.menuPresentMode = .menuSlideIn
         
        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        self.navigationController!.navigationBar.tintColor = UIColor.white
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
