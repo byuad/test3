@@ -27,6 +27,8 @@ class VideosViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
         
+         self.navigationController?.navigationBar.tintColor = UIColor.white
+        
         let image: UIImage = UIImage(named: "UNMCicon.png")!
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit

@@ -11,6 +11,9 @@
 		9A6FFB84221A750200199036 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB83221A750200199036 /* SideMenuViewController.swift */; };
 		9A6FFB88221BA40100199036 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */; };
 		9A6FFB94221CB7BE00199036 /* contactsText.html in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FFB93221CB7BE00199036 /* contactsText.html */; };
+		9A6FFBC0221DE6C900199036 /* ACLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFBBF221DE6C900199036 /* ACLSViewController.swift */; };
+		9A6FFBC2221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FFBC1221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf */; };
+		9A6FFBC4221DF7EF00199036 /* OMFSroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFBC3221DF7EF00199036 /* OMFSroundsViewController.swift */; };
 		9A97551A2217B5560004A750 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9755192217B5560004A750 /* VideosViewController.swift */; };
 		9A97551C2217B75A0004A750 /* thirdmolar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A97551B2217B75A0004A750 /* thirdmolar.mp4 */; };
 		9AA74C432218F61E00A77E58 /* briana-wallace-783315-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */; };
@@ -37,6 +40,9 @@
 		9A6FFB83221A750200199036 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		9A6FFB93221CB7BE00199036 /* contactsText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contactsText.html; sourceTree = "<group>"; };
+		9A6FFBBF221DE6C900199036 /* ACLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLSViewController.swift; sourceTree = "<group>"; };
+		9A6FFBC1221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cardiac Arrest Circular Algorithm One.pdf"; sourceTree = "<group>"; };
+		9A6FFBC3221DF7EF00199036 /* OMFSroundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMFSroundsViewController.swift; sourceTree = "<group>"; };
 		9A9755192217B5560004A750 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		9A97551B2217B75A0004A750 /* thirdmolar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = thirdmolar.mp4; sourceTree = "<group>"; };
 		9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "briana-wallace-783315-unsplash.jpg"; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 				9A9755192217B5560004A750 /* VideosViewController.swift */,
 				9AA74C4D221A14EA00A77E58 /* ODR Manager.swift */,
 				9AFF5E5022163F3500D1DB37 /* Main.storyboard */,
+				9A6FFBC3221DF7EF00199036 /* OMFSroundsViewController.swift */,
+				9A6FFBBF221DE6C900199036 /* ACLSViewController.swift */,
 				9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */,
 				9A6FFB83221A750200199036 /* SideMenuViewController.swift */,
 				9AFF5E5322163F3600D1DB37 /* Assets.xcassets */,
@@ -126,6 +134,7 @@
 				9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */,
 				9AA74C4622190D0200A77E58 /* drywall.jpg */,
 				9A6FFB93221CB7BE00199036 /* contactsText.html */,
+				9A6FFBC1221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf */,
 				9AFF5E5522163F3600D1DB37 /* LaunchScreen.storyboard */,
 				9AFF5E5822163F3600D1DB37 /* Info.plist */,
 			);
@@ -205,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFF5E5722163F3600D1DB37 /* LaunchScreen.storyboard in Resources */,
+				9A6FFBC2221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf in Resources */,
 				9AA74C4B2219331700A77E58 /* intern2.html in Resources */,
 				9A6FFB82221A68EE00199036 /* missingToothClip.mp4 in Resources */,
 				9A97551C2217B75A0004A750 /* thirdmolar.mp4 in Resources */,
@@ -278,7 +288,9 @@
 				9AD0628722164C93000F8119 /* InternDutiesViewController.swift in Sources */,
 				9AFF5E4F22163F3500D1DB37 /* ViewController.swift in Sources */,
 				9A97551A2217B5560004A750 /* VideosViewController.swift in Sources */,
+				9A6FFBC4221DF7EF00199036 /* OMFSroundsViewController.swift in Sources */,
 				9A6FFB84221A750200199036 /* SideMenuViewController.swift in Sources */,
+				9A6FFBC0221DE6C900199036 /* ACLSViewController.swift in Sources */,
 				9AFF5E4D22163F3500D1DB37 /* AppDelegate.swift in Sources */,
 				9A6FFB88221BA40100199036 /* ContactsTableViewController.swift in Sources */,
 			);

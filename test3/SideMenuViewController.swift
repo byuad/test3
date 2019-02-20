@@ -9,21 +9,25 @@
 import UIKit
 import SideMenu
 
-class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
- 
+class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+
     @IBOutlet var menuTableView: UITableView!
     
-    var menuItems = ["Parameters of Care by AAOMS","Is my patient an outpatient anesthesia candidate?", "Typical Free Flap Protocol", "Other Resources"]
+    var menuItems = ["ACLS Protocols", "Parameters of Care by AAOMS","Is my patient an outpatient anesthesia candidate?", "Typical Free Flap Protocol", "Other Resources"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
       
         menuTableView.dataSource = self
+        menuTableView.delegate = self
         
         let background = UIImageView(image: UIImage(named: "andre-iv-1310544-unsplash.jpg"))
         self.menuTableView.backgroundView = background
         background.contentMode = .scaleAspectFill
+        background.alpha = 0.8
     
     
     
@@ -53,6 +57,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
         cell.textLabel?.text = menuItems[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
+//        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        cell.textLabel?.font = UIFont(name: "Baskerville-SemiBold", size: 18)
         
 //         cell.backgroundColor = UIColor.white
 //        cell.contentView.layer.opacity = 0.4
@@ -64,7 +71,18 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+//        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+        
+        let segueIdentifier: String
+        switch indexPath.row {
+        case 0: //For "one"
+            segueIdentifier = "ACLSsegue"
+        case 1: //For "two"
+            segueIdentifier = "showView2"
+        default: //For "three"
+            segueIdentifier = "showView3"
+        }
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
     }
     
     
@@ -73,6 +91,8 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         dismiss(animated: true, completion: nil)
         
     }
+    
+
     
     
 
