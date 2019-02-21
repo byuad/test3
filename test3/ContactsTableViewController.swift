@@ -114,11 +114,12 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         tableView.delegate = self
         
      
-       
+         self.tableView.sectionHeaderHeight = UITableView.automaticDimension
 
         self.navigationController?.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = nil
-        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -131,14 +132,19 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
          super.viewWillAppear(animated)
         
         self.navigationController?.navigationBar.tintColor = UIColor.black
-        
+    
         
     }
 
+   
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return myTitles.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -167,16 +173,31 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         return myTitles[section]
     }
     
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//
+//        let title = UILabel(frame: CGRect(x:10, y:5, width:tableView.frame.size.width, height:18))
+//        title.font = UIFont(name: "Rockwell", size: 16)!
+//        title.textColor = UIColor.white
+//
+//        let header = view as! UITableViewHeaderFooterView
+//        header.textLabel!.font=title.font
+//        header.textLabel!.textColor=title.textColor
+//        header.contentView.backgroundColor = UIColor.darkGray
+//
+//        self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+//    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let title = UILabel()
-        title.font = UIFont(name: "Rockwell", size: 16)!
-        title.textColor = UIColor.white
-        
-        let header = view as! UITableViewHeaderFooterView
-        header.textLabel!.font=title.font
-        header.textLabel!.textColor=title.textColor
-        header.contentView.backgroundColor = UIColor.darkGray
+        let view = UIView(frame: CGRect(x:0, y:0, width:tableView.frame.size.width, height:30))
+        let label = UILabel(frame: CGRect(x:20, y:10, width:tableView.frame.size.width, height:30))
+        label.font = UIFont(name: "Rockwell", size: 18)!
+        label.text = myTitles[section]
+        view.addSubview(label);
+        view.backgroundColor = UIColor.gray;
+         self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+        return view
+
     }
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)

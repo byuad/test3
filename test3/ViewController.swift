@@ -12,11 +12,12 @@ import SideMenu
 class ViewController: UIViewController {
     
 
+    @IBOutlet weak var parallaxImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+//        setupParallax()
         
         // Do any additional setup after loading the view, typically from a nib.
     
@@ -72,28 +73,26 @@ class ViewController: UIViewController {
 //    }
     
    
-   
+//    func setupParallax() {
+//        let min = CGFloat(-30)
+//        let max = CGFloat(30)
+//
+//        let xMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.x", type: .tiltAlongHorizontalAxis)
+//        xMotion.minimumRelativeValue = min
+//        xMotion.maximumRelativeValue = max
+//
+//        let yMotion = UIInterpolatingMotionEffect(keyPath: "layer.transform.translation.y", type: .tiltAlongVerticalAxis)
+//        yMotion.minimumRelativeValue = min
+//        yMotion.maximumRelativeValue = max
+//
+//        let motionEffectGroup = UIMotionEffectGroup()
+//        motionEffectGroup.motionEffects = [xMotion, yMotion]
+//
+//        parallaxImageView.addMotionEffect(motionEffectGroup)
+//    }
+
+    
+    
     
 }
-//
-//extension UINavigationController {
-//    func addLogoImage(image: UIImage, navItem: UINavigationItem) {
-//        let imageView = UIImageView(image: image)
-//        imageView.contentMode = .scaleAspectFit
-//        imageView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 44))
-//        view.addSubview(imageView)
-//
-//        navItem.titleView = view
-//        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-//        imageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-//
-//        view.heightAnchor.constraint(equalTo: navigationBar.heightAnchor).isActive = true
-//        view.centerXAnchor.constraint(equalTo: navigationBar.centerXAnchor).isActive = true
-//        view.centerYAnchor.constraint(equalTo: navigationBar.centerYAnchor).isActive = true
-//    }
-//}
 
