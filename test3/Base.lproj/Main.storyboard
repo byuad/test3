@@ -144,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="-638.2308845577212"/>
         </scene>
-        <!--First Page-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,17 +152,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="briana-wallace-783315-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-u1-3w6">
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-watercolour-background_1048-879" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-u1-3w6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNMCiconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="MXI-a3-aKz">
+                                <rect key="frame" x="-322.5" y="-30" width="1020" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1020" id="J2a-2G-XM9"/>
+                                    <constraint firstAttribute="height" constant="50" id="cuT-Xh-IrW"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-a6-GxR">
-                                <rect key="frame" x="20" y="72.5" width="335" height="458.5"/>
+                                <rect key="frame" x="20" y="53.5" width="335" height="496"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="sde-6l-mNd">
-                                        <rect key="frame" x="20" y="0.0" width="295" height="147.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="295" height="160"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="52B-W5-00I">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="52B-W5-00I">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDK-n6-9rf">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
@@ -171,24 +178,24 @@
                                                             <segue destination="HXa-2Z-6fR" kind="show" id="r5X-Xh-AUt"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMFS Rounds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgq-gC-BoA">
-                                                        <rect key="frame" x="21" y="90" width="80.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMFS Rounds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgq-gC-BoA">
+                                                        <rect key="frame" x="18.5" y="80" width="85.5" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-Xc-bi2">
-                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gYT-Xc-bi2">
+                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CB-GcT">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="scheduleIcon"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Schedule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-3v-dCt">
-                                                        <rect key="frame" x="15.5" y="90" width="91.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                        <rect key="frame" x="8" y="80" width="106.5" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -197,25 +204,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="saf-FI-Kfh">
-                                        <rect key="frame" x="20" y="155.5" width="295" height="147.5"/>
+                                        <rect key="frame" x="20" y="168" width="295" height="160"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-0w-uKX">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pxQ-0w-uKX">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mw-xZ-Qvz">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="scalpel"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Surgery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5a-rK-O3q">
-                                                        <rect key="frame" x="22" y="90" width="79" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                        <rect key="frame" x="15.5" y="80" width="92" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I8j-ox-1Mu">
-                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I8j-ox-1Mu">
+                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-WB-jSv">
                                                         <rect key="frame" x="15.5" y="0.0" width="92" height="80"/>
@@ -224,9 +231,9 @@
                                                             <segue destination="lZD-mH-Nrc" kind="show" id="po4-i4-akB"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Education" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-50-XPS">
-                                                        <rect key="frame" x="9.5" y="90" width="103.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Education" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-50-XPS">
+                                                        <rect key="frame" x="4" y="80" width="115" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -235,25 +242,25 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-Li-IFo">
-                                        <rect key="frame" x="20" y="311" width="295" height="147.5"/>
+                                        <rect key="frame" x="20" y="336" width="295" height="160"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8D5-KJ-vCV">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8D5-KJ-vCV">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku6-gr-oyq">
-                                                        <rect key="frame" x="28.5" y="0.0" width="66" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="80"/>
                                                         <state key="normal" image="pin"/>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps &amp; Directions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-8A-ciW">
-                                                        <rect key="frame" x="9.5" y="90" width="103.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps &amp; Directions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-8A-ciW">
+                                                        <rect key="frame" x="0.0" y="80" width="122.5" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-wJ-A0b">
-                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="147.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-wJ-A0b">
+                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="160"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yL-Rn-jqJ">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
@@ -262,9 +269,9 @@
                                                             <segue destination="dE1-3g-sbh" kind="show" id="7sA-9M-nyQ"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1b-f5-ErH">
-                                                        <rect key="frame" x="6.5" y="90" width="109.5" height="57.5"/>
-                                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1b-f5-ErH">
+                                                        <rect key="frame" x="2" y="80" width="119" height="80"/>
+                                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -288,15 +295,17 @@
                             <constraint firstItem="nH8-u1-3w6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Tb-PJ-huz"/>
                             <constraint firstItem="nH8-u1-3w6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8IV-RS-iQ4"/>
                             <constraint firstItem="nH8-u1-3w6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8rH-3x-dS7"/>
+                            <constraint firstItem="MXI-a3-aKz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-30" id="Bm9-X9-R6T"/>
                             <constraint firstItem="XOb-a6-GxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVa-Q4-GTd"/>
                             <constraint firstItem="XOb-a6-GxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LyK-Zg-nqm"/>
                             <constraint firstAttribute="trailing" secondItem="XOb-a6-GxR" secondAttribute="trailing" constant="20" id="QlO-r9-3QA"/>
                             <constraint firstItem="XOb-a6-GxR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TUW-8g-SFG"/>
                             <constraint firstAttribute="bottom" secondItem="nH8-u1-3w6" secondAttribute="bottom" id="U5n-ym-HrH"/>
+                            <constraint firstItem="MXI-a3-aKz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdA-Cf-2I8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="First Page" id="3NA-jh-Dra">
+                    <navigationItem key="navigationItem" id="3NA-jh-Dra">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon2" style="plain" id="v7r-9v-tAJ">
                             <connections>
                                 <segue destination="GHd-UK-oXL" kind="presentation" id="dBv-JH-IaF"/>
@@ -723,8 +732,8 @@
     </scenes>
     <resources>
         <image name="UNMCicon" width="232" height="233"/>
+        <image name="UNMCiconWhite" width="1020" height="1022"/>
         <image name="backButton2" width="37.5" height="37.5"/>
-        <image name="briana-wallace-783315-unsplash" width="6000" height="4000"/>
         <image name="chartIcon" width="71" height="71"/>
         <image name="consultsIcon" width="59" height="71"/>
         <image name="forceps" width="750" height="500"/>
@@ -736,6 +745,7 @@
         <image name="pin" width="66" height="80"/>
         <image name="pulse" width="92" height="80"/>
         <image name="qtips" width="3744" height="5616"/>
+        <image name="red-watercolour-background_1048-879" width="626" height="626"/>
         <image name="scalpel" width="80" height="80"/>
         <image name="scheduleIcon" width="80" height="80"/>
         <image name="stethoscope" width="80" height="80"/>
