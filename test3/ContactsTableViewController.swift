@@ -193,8 +193,9 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         let label = UILabel(frame: CGRect(x:20, y:10, width:tableView.frame.size.width, height:30))
         label.font = UIFont(name: "Rockwell", size: 18)!
         label.text = myTitles[section]
+        label.textColor = UIColor.white
         view.addSubview(label);
-        view.backgroundColor = UIColor.gray;
+        view.backgroundColor = UIColor.darkGray;
          self.tableView.sectionHeaderHeight = UITableView.automaticDimension
         return view
 

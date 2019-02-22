@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A211F1F221EFF890066DCC6 /* intern2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A211F1E221EFF890066DCC6 /* intern2.rtf */; };
 		9A6FFB82221A68EE00199036 /* missingToothClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */; };
 		9A6FFB84221A750200199036 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB83221A750200199036 /* SideMenuViewController.swift */; };
 		9A6FFB88221BA40100199036 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		5985EFF69BE07B0DB75F6023 /* Pods-test3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test3/Pods-test3.debug.xcconfig"; sourceTree = "<group>"; };
 		7E9AD4EBEC4C01D5D0C6EBD5 /* Pods-test3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test3.release.xcconfig"; path = "Pods/Target Support Files/Pods-test3/Pods-test3.release.xcconfig"; sourceTree = "<group>"; };
+		9A211F1E221EFF890066DCC6 /* intern2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = intern2.rtf; sourceTree = "<group>"; };
 		9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingToothClip.mp4; sourceTree = "<group>"; };
 		9A6FFB83221A750200199036 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				9AA74C4C221A0FCE00A77E58 /* Videos */,
 				9AA74C4A2219331700A77E58 /* intern2.html */,
 				9AA74C422218F61D00A77E58 /* briana-wallace-783315-unsplash.jpg */,
+				9A211F1E221EFF890066DCC6 /* intern2.rtf */,
 				9AA74C4622190D0200A77E58 /* drywall.jpg */,
 				9A6FFB93221CB7BE00199036 /* contactsText.html */,
 				9A6FFBC1221DE73700199036 /* Cardiac Arrest Circular Algorithm One.pdf */,
@@ -223,6 +226,7 @@
 				9AA74C5C221A5F6400A77E58 /* orthogClip.mp4 in Resources */,
 				9AA74C59221A5F6400A77E58 /* implantClip.mp4 in Resources */,
 				9AA74C432218F61E00A77E58 /* briana-wallace-783315-unsplash.jpg in Resources */,
+				9A211F1F221EFF890066DCC6 /* intern2.rtf in Resources */,
 				9AA74C4722190D0200A77E58 /* drywall.jpg in Resources */,
 				9AA74C5A221A5F6400A77E58 /* TADClip.mp4 in Resources */,
 				9AFF5E5422163F3600D1DB37 /* Assets.xcassets in Resources */,

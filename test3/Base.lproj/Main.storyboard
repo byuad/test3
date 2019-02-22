@@ -23,20 +23,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bHf-lP-MQw">
-                                <rect key="frame" x="20" y="74.5" width="335" height="454.5"/>
+                                <rect key="frame" x="20" y="88.5" width="335" height="426"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="B3N-gC-lvg">
-                                        <rect key="frame" x="20" y="0.0" width="295" height="138.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="295" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xci-L6-d0d">
-                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="138.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyr-pJ-skO">
                                                         <rect key="frame" x="33.5" y="0.0" width="56" height="71"/>
-                                                        <state key="normal" image="pharmIcom"/>
+                                                        <state key="normal" image="pharmIcon"/>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders/Meds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-4j-j4G">
-                                                        <rect key="frame" x="19" y="81" width="84.5" height="57.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-4j-j4G">
+                                                        <rect key="frame" x="25.5" y="81" width="71.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xh1-h7-4Fr">
-                                                <rect key="frame" x="172.5" y="14" width="122.5" height="110"/>
+                                                <rect key="frame" x="172.5" y="0.0" width="122.5" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxg-BJ-hTd">
                                                         <rect key="frame" x="26" y="0.0" width="71" height="71"/>
@@ -61,7 +61,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-Ke-ON8">
-                                        <rect key="frame" x="20" y="168.5" width="295" height="110"/>
+                                        <rect key="frame" x="20" y="140" width="295" height="110"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UXs-jl-Zvd">
                                                 <rect key="frame" x="0.0" y="0.0" width="122.5" height="110"/>
@@ -96,7 +96,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tXZ-AQ-DY3">
-                                        <rect key="frame" x="20" y="308.5" width="295" height="146"/>
+                                        <rect key="frame" x="20" y="280" width="295" height="146"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vu9-Mr-1eu">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="146"/>
@@ -152,7 +152,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-watercolour-background_1048-879" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-u1-3w6" userLabel="Parallax Image">
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-watercolour-background_1048-879" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-u1-3w6" userLabel="Parallax Image">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNMCiconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="MXI-a3-aKz">
@@ -334,7 +334,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-Xh-ROm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bricksWhite" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-Xh-ROm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50283604452054798" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -565,34 +565,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-cO-qHj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-94-UtG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cbn-cO-qHj" firstAttribute="trailing" secondItem="OZ8-Ph-h8c" secondAttribute="trailing" id="8FX-gx-8YV"/>
-                            <constraint firstItem="cbn-cO-qHj" firstAttribute="top" secondItem="WmH-FJ-62B" secondAttribute="top" constant="64" id="IVp-sk-m7g"/>
-                            <constraint firstItem="cbn-cO-qHj" firstAttribute="leading" secondItem="OZ8-Ph-h8c" secondAttribute="leading" id="ZAx-wH-onT"/>
-                            <constraint firstItem="cbn-cO-qHj" firstAttribute="bottom" secondItem="WmH-FJ-62B" secondAttribute="bottom" id="l0g-Iz-7TO"/>
-                            <constraint firstItem="cbn-cO-qHj" firstAttribute="top" secondItem="WmH-FJ-62B" secondAttribute="top" id="wcP-k4-s4i"/>
+                            <constraint firstItem="ahc-94-UtG" firstAttribute="leading" secondItem="OZ8-Ph-h8c" secondAttribute="leading" id="AA1-Gm-B6E"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ahc-94-UtG" secondAttribute="bottom" id="AfA-1S-6Pm"/>
+                            <constraint firstItem="ahc-94-UtG" firstAttribute="top" secondItem="WmH-FJ-62B" secondAttribute="top" id="EpJ-8h-DQN"/>
+                            <constraint firstItem="OZ8-Ph-h8c" firstAttribute="trailing" secondItem="ahc-94-UtG" secondAttribute="trailing" id="o6E-VV-sTy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OZ8-Ph-h8c"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="IVp-sk-m7g"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="AHD-rV-v33"/>
                     <connections>
                         <outlet property="View" destination="WmH-FJ-62B" id="a7V-B7-YsW"/>
-                        <outlet property="webView" destination="cbn-cO-qHj" id="QMb-AC-bTh"/>
+                        <outlet property="tv" destination="ahc-94-UtG" id="JyT-1r-mJt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LO-8k-ooB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -730,16 +723,16 @@
         <image name="UNMCicon" width="232" height="233"/>
         <image name="UNMCiconWhite" width="1020" height="1022"/>
         <image name="backButton2" width="37.5" height="37.5"/>
+        <image name="bricksWhite" width="3000" height="2031"/>
         <image name="canineIcon" width="133" height="75"/>
         <image name="chartIcon" width="71" height="71"/>
         <image name="consultsIcon" width="59" height="71"/>
         <image name="hospitalbedIcon" width="107" height="107"/>
         <image name="implantIcon" width="133" height="75"/>
-        <image name="marble" width="940" height="627"/>
-        <image name="menuIcon2" width="45" height="45"/>
+        <image name="menuIcon2" width="45" height="33"/>
         <image name="missingtoothIcon" width="133" height="75"/>
         <image name="orthogIcon" width="133" height="75"/>
-        <image name="pharmIcom" width="56" height="71"/>
+        <image name="pharmIcon" width="56" height="71"/>
         <image name="phone-call" width="80" height="80"/>
         <image name="pin" width="66" height="80"/>
         <image name="pulse" width="92" height="80"/>
