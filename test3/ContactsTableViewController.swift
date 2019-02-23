@@ -58,7 +58,7 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         Contacts(name: "Dr. Desa", cellPhone: "402-639-8598", pager: "402-888-0009"),
         Contacts(name: "Dr. Untrauer", cellPhone: "402-917-8556", pager: "402-888-1528"),
         Contacts(name: "Dr. Ruskin", cellPhone: "352-672-1200", pager: "402-888-2468"),
-        Contacts(name: "Dr. Chandra", cellPhone: "408-386-4849", pager: "1"),
+        Contacts(name: "Dr. Chandra", cellPhone: "408-386-4849", pager: "402-888-"),
         Contacts(name: "Dr. Gardner", cellPhone: "712-259-4799", pager: "402-888-0183"),
         Contacts(name: "Dr. Rae", cellPhone: "248-606-6925", pager: "402-888-6717"),
         Contacts(name: "Dr. Holley", cellPhone: "561-289-3012", pager: "402-888-0181"),
@@ -71,23 +71,32 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         Contacts(name: "Dr. Treinen", cellPhone: "712-470-6291", pager: "402-888-2494"),
         Contacts(name: "Dr. Faraj", cellPhone: "708-717-9082", pager: "402-888-2494"),
         Contacts(name: "Dr. Sloan", cellPhone: "801-362-9334", pager: "402-888-5430"),
-        Contacts(name: "Resident Room @ SSP", cellPhone: "", pager: "402-559-6830")
+        Contacts(name: "Resident Room @ SSP", cellPhone: "", pager: "402-559-6830"),
+        Contacts(name: "Head/Neck Pager", cellPhone: "", pager: "402-888-3567")
         
     ],
         
         [Contacts(name: "OMFS LOC Clinic", cellPhone: "", pager: "402-559-5999"),
-        Contacts(name: "Nurse line LOC", cellPhone: "", pager: "402-559-5024"),
+        Contacts(name: "Nurse Line LOC", cellPhone: "", pager: "402-559-5024"),
+        Contacts(name: "Nurse Line VP", cellPhone: "", pager: "402-596-3174"),
         Contacts(name: "Monica VP", cellPhone: "Fax: 3171", pager: "402-596-3172"),
-        Contacts(name: "Terri VP", cellPhone: "", pager: "402-596-3165"),
+        Contacts(name: "Jan Baxter", cellPhone: "", pager: "402-559-8740"),
+        Contacts(name: "Front Desk VP", cellPhone: "", pager: "402-596-3165"),
+        Contacts(name: "Trish LOC", cellPhone: "", pager: "402-559-4330"),
+        Contacts(name: "Kelly LOC", cellPhone: "", pager: "402-559-7527"),
+        Contacts(name: "MD phone LOC", cellPhone: "", pager: "402-559-7571"),
+        Contacts(name: "MD phone VP", cellPhone: "", pager: "402-596-3173"),
         Contacts(name: "LOC Fax", cellPhone: "", pager: "402-559-3499"),
-        Contacts(name: "Presurgical Screening Fax", cellPhone: "", pager: "402-552-3267")
+        Contacts(name: "Presurgical Screening Fax", cellPhone: "", pager: "402-552-3267"),
+        Contacts(name: "Dr. Markt", cellPhone: "", pager: "402-559-9200"),
+        Contacts(name: "Shannon", cellPhone: "", pager: "402-559-9201"),
+        Contacts(name: "AGD Clinic/Priti", cellPhone: "402-559-3627", pager: "402-559-6000"),
     ],
         
         [Contacts(name: "HL Charge Nurse", cellPhone: "", pager: "402-889-0931"),
         Contacts(name: "Charge Nurse after-hours", cellPhone: "", pager: "402-507-3738"),
         Contacts(name: "Observation 2OP", cellPhone: "", pager: "402-552-9627"),
         Contacts(name: "OR scheduling ", cellPhone: "", pager: "402-559-9900"),
-        Contacts(name: "UNMC Hospital Operator", cellPhone: "", pager: "402-552-2000"),
         Contacts(name: "HL Preop Charge Nurse ", cellPhone: "", pager: "402-889-7402"),
         Contacts(name: "HL PACU Charge Nurse", cellPhone: "", pager: "402-889-7275"),
         Contacts(name: "Fritch OR Charge Nurse", cellPhone: "", pager: "402-507-2018"),
@@ -97,8 +106,9 @@ class ContactsTableViewController: UITableViewController, UITextViewDelegate {
         Contacts(name: "Anesthesia On-Call", cellPhone: "", pager: "402-507-7777"),
         Contacts(name: "Hospitalist On-call", cellPhone: "", pager: "402-888-1712"),
         Contacts(name: "Inpatient Pharmacy", cellPhone: "", pager: "402-559-7235"),
-        Contacts(name: "Outpatient (DOC) Pharmacy ", cellPhone: "", pager: "402-559-5215"),
-        Contacts(name: "UNMC Interpretive Services", cellPhone: "", pager: "844-212-7629")
+        Contacts(name: "Outpatient(DOC) Pharmacy ", cellPhone: "", pager: "402-559-5215"),
+        Contacts(name: "UNMC Interpretive Services", cellPhone: "", pager: "844-212-7629"),
+        Contacts(name: "UNMC Hospital Operator", cellPhone: "", pager: "402-552-2000"),
      
         
         ]]

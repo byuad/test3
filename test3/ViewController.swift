@@ -14,6 +14,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var parallaxImageView: UIImageView!
     
+    
+    @IBAction func schedulePressed(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

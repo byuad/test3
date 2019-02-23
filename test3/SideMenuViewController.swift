@@ -24,11 +24,11 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         menuTableView.dataSource = self
         menuTableView.delegate = self
         
-        let background = UIImageView(image: UIImage(named: "andre-iv-1310544-unsplash.jpg"))
-        self.menuTableView.backgroundView = background
-        background.contentMode = .scaleAspectFill
-        background.alpha = 0.8
-    
+//        let background = UIImageView(image: UIImage(named: "andre-iv-1310544-unsplash.jpg"))
+//        self.menuTableView.backgroundView = background
+////        background.contentMode = .scaleAspectFill
+//        background.alpha = 0.8
+//    
     
     
     }

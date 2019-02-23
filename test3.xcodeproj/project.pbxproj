@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A211F1F221EFF890066DCC6 /* intern2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A211F1E221EFF890066DCC6 /* intern2.rtf */; };
+		9A211F2B22207EB40066DCC6 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A211F2A22207EB40066DCC6 /* ScheduleViewController.swift */; };
+		9A211F2D2220DFF50066DCC6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A211F2C2220DFF50066DCC6 /* MapViewController.swift */; };
 		9A6FFB82221A68EE00199036 /* missingToothClip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */; };
 		9A6FFB84221A750200199036 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB83221A750200199036 /* SideMenuViewController.swift */; };
 		9A6FFB88221BA40100199036 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */; };
@@ -38,6 +40,8 @@
 		5985EFF69BE07B0DB75F6023 /* Pods-test3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test3/Pods-test3.debug.xcconfig"; sourceTree = "<group>"; };
 		7E9AD4EBEC4C01D5D0C6EBD5 /* Pods-test3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test3.release.xcconfig"; path = "Pods/Target Support Files/Pods-test3/Pods-test3.release.xcconfig"; sourceTree = "<group>"; };
 		9A211F1E221EFF890066DCC6 /* intern2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = intern2.rtf; sourceTree = "<group>"; };
+		9A211F2A22207EB40066DCC6 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		9A211F2C2220DFF50066DCC6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A6FFB81221A68EE00199036 /* missingToothClip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = missingToothClip.mp4; sourceTree = "<group>"; };
 		9A6FFB83221A750200199036 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				9A9755192217B5560004A750 /* VideosViewController.swift */,
 				9AA74C4D221A14EA00A77E58 /* ODR Manager.swift */,
 				9AFF5E5022163F3500D1DB37 /* Main.storyboard */,
+				9A211F2C2220DFF50066DCC6 /* MapViewController.swift */,
+				9A211F2A22207EB40066DCC6 /* ScheduleViewController.swift */,
 				9A6FFBC3221DF7EF00199036 /* OMFSroundsViewController.swift */,
 				9A6FFBBF221DE6C900199036 /* ACLSViewController.swift */,
 				9A6FFB87221BA40100199036 /* ContactsTableViewController.swift */,
@@ -288,11 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A211F2D2220DFF50066DCC6 /* MapViewController.swift in Sources */,
 				9AA74C4E221A14EA00A77E58 /* ODR Manager.swift in Sources */,
 				9AD0628722164C93000F8119 /* InternDutiesViewController.swift in Sources */,
 				9AFF5E4F22163F3500D1DB37 /* ViewController.swift in Sources */,
 				9A97551A2217B5560004A750 /* VideosViewController.swift in Sources */,
 				9A6FFBC4221DF7EF00199036 /* OMFSroundsViewController.swift in Sources */,
+				9A211F2B22207EB40066DCC6 /* ScheduleViewController.swift in Sources */,
 				9A6FFB84221A750200199036 /* SideMenuViewController.swift in Sources */,
 				9A6FFBC0221DE6C900199036 /* ACLSViewController.swift in Sources */,
 				9AFF5E4D22163F3500D1DB37 /* AppDelegate.swift in Sources */,

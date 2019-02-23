@@ -145,6 +145,43 @@
             <point key="canvasLocation" x="1076" y="-638.2308845577212"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="TYJ-ua-ScW">
+            <objects>
+                <viewController id="nn7-ob-eU7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MEe-YJ-2kU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-E7-OGA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="abP-9W-ttw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="abP-9W-ttw" id="YM3-Lo-i5J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WNb-E7-OGA" firstAttribute="top" secondItem="MEe-YJ-2kU" secondAttribute="top" id="25J-3B-AOG"/>
+                            <constraint firstItem="WNb-E7-OGA" firstAttribute="trailing" secondItem="7aE-6O-zeI" secondAttribute="trailing" id="LZy-Ji-5nN"/>
+                            <constraint firstItem="WNb-E7-OGA" firstAttribute="leading" secondItem="7aE-6O-zeI" secondAttribute="leading" id="ccu-sw-sDp"/>
+                            <constraint firstAttribute="bottom" secondItem="WNb-E7-OGA" secondAttribute="bottom" id="qv4-wK-7Uc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7aE-6O-zeI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0b-Nc-sbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.8" y="-618.44077961019491"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,6 +229,10 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-CB-GcT">
                                                         <rect key="frame" x="21.5" y="0.0" width="80" height="80"/>
                                                         <state key="normal" image="scheduleIcon"/>
+                                                        <connections>
+                                                            <action selector="schedulePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DO8-OJ-G2f"/>
+                                                            <segue destination="FtR-9S-tCn" kind="show" id="JHF-Tj-gIV"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Schedule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgy-3v-dCt">
                                                         <rect key="frame" x="8" y="80" width="106.5" height="80"/>
@@ -250,6 +291,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku6-gr-oyq">
                                                         <rect key="frame" x="0.0" y="0.0" width="122.5" height="80"/>
                                                         <state key="normal" image="pin"/>
+                                                        <connections>
+                                                            <segue destination="UVt-Hc-Tpd" kind="show" id="4Oj-52-hJe"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps &amp; Directions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-8A-ciW">
                                                         <rect key="frame" x="0.0" y="80" width="122.5" height="80"/>
@@ -592,14 +636,48 @@
             </objects>
             <point key="canvasLocation" x="1882.4000000000001" y="132.68365817091455"/>
         </scene>
+        <!--Weekly Schedule-->
+        <scene sceneID="jDz-ON-qS4">
+            <objects>
+                <viewController title="Weekly Schedule" id="FtR-9S-tCn" customClass="WebViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfP-P3-7cx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKx-QM-34A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QKx-QM-34A" firstAttribute="trailing" secondItem="IPo-JC-v0x" secondAttribute="trailing" id="5bP-dv-pTp"/>
+                            <constraint firstAttribute="bottom" secondItem="QKx-QM-34A" secondAttribute="bottom" id="i8X-Ki-IRj"/>
+                            <constraint firstItem="QKx-QM-34A" firstAttribute="top" secondItem="gfP-P3-7cx" secondAttribute="top" id="mVr-dP-ABE"/>
+                            <constraint firstItem="QKx-QM-34A" firstAttribute="leading" secondItem="IPo-JC-v0x" secondAttribute="leading" id="qJs-i1-1dU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPo-JC-v0x"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="QKx-QM-34A" id="yvU-Ea-uBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgb-r5-7gN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="128.18590704647679"/>
+        </scene>
         <!--Menu-->
         <scene sceneID="Lfp-e8-Oe9">
             <objects>
                 <tableViewController storyboardIdentifier="SideMenuViewController" id="JoV-Qd-vx9" customClass="SideMenuViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QFN-4S-hAV">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QFN-4S-hAV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageView key="tableFooterView" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UNMCicon" id="iKK-Ji-61w">
                             <rect key="frame" x="0.0" y="72" width="375" height="268"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -676,6 +754,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBs-zB-41G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-60" y="1608"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="jja-Wt-MrZ">
+            <objects>
+                <viewController id="UVt-Hc-Tpd" customClass="MapViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TmQ-U1-5uD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rxk-Pd-17R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKm-AU-65f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="1562"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="MQE-iI-TOR">
